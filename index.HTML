@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Digital Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+  body {
+    margin: 0;
+    background-color: #1e242f; /* Darker background matching the screenshot */
+    color: #9a9eaa;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  /* Header section */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .header img {
+    border-radius: 50%;
+    width: 200px;  /* Enlarged photo */
+    height: 200px; /* Enlarged photo */
+    object-fit: cover;
+  }
+
+  .header-info {
+    flex-grow: 1;
+  }
+
+  .header-info .subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #61656f; /* dimmer text for subtitle */
+    margin: 0 0 10px 0;
+    letter-spacing: 1.2px;
+  }
+
+  .header-info .name {
+    display: inline-block;
+    background-color: #2a364b; /* Slightly lighter dark blue background */
+    color: white;
+    font-weight: 700;
+    font-size: 36px;    /* Bigger font size */
+    padding: 10px 24px; /* Bigger padding */
+    border-radius: 12px;
+    margin-bottom: 6px;
+  }
+
+  .header-info .role {
+    font-weight: 400;
+    font-size: 18px;
+    color: #61656f; /* matching subtitle color */
+    margin: 0;
+  }
+
+  /* Section titles */
+  h2 {
+    font-weight: 700;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  /* Projects grid */
+  .projects {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    background-color: #2a364b;
+    border-radius: 12px;
+    padding: 15px;
+    width: 280px;
+    box-sizing: border-box;
+    color: #9a9eaa;
+  }
+
+  .project a img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: contain;
+    height: 140px;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .project-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 8px;
+  }
+
+  .project-description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* Contact Section */
+  .contact {
+    margin-top: 40px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    color: #9a9eaa;
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+  /* Icon styles */
+  .icon {
+    width: 18px;
+    height: 18px;
+    fill: #9a9eaa;
+    flex-shrink: 0;
+  }
+
+  a {
+    color: #9a9eaa;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="https://i.postimg.cc/zvYjFS0J/1000165439-f08371e4f088f21ee228ab5f4fed20b5-8-21-2024-8-30-30-PM.jpg" alt="Profile picture" />
+      <div class="header-info">
+        <p class="subtitle">DIGITAL PORTFOLIO</p>
+        <div class="name">Carlos Huezo</div>
+        <p class="role">Web designer</p>
+      </div>
+    </header>
+
+    <section class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <a href="https://checalo.example.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.postimg.cc/CKvX7tqw/Screenshot-2025-11-13-141350.png" alt="Checalo project logo" />
+          </a>
+          <div class="project-title">Chécalo</div>
+          <div class="project-description">
+            Using Chécalo optimizes your company’s operation with a practical tool.
+          </div>
+        </div>
+        <div class="project">
+          <a href="https://deviceholder.example.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.postimg.cc/fTBPDp8B/Secure-Holder-Innovations.jpg" alt="Device holder project image" />
+          </a>
+          <div class="project-title">Device holder</div>
+          <div class="project-description">
+            The device holder was a project related to the 2024 expo, where we had to create support for phones using Tinkercad.
+          </div>
+        </div>
+        <div class="project">
+          <a href="https://solarsearch.example.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.postimg.cc/2jHyv8yD/Diseno-sin-titulo.png" alt="SolarSearch project logo" />
+          </a>
+          <div class="project-title">SolarSearch</div>
+          <div class="project-description">
+            Thanks to this project, SolarSearch was born, a company specialized in rescue drones.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+
+      <div class="contact-item">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2h-16a2 2 0 00-2 2zM4.22 7.47l7.78 4.6 7.78-4.6v10.06H4.22V7.47zm7.78 3.28l-7.78-4.6h16.56l-7.78 4.6z"/></svg>
+        <a href="mailto:carlos.huezo2025@raices.superate.org.sv">carlos.huezo2025@raices.superate.org.sv</a>
+      </div>
+      <div class="contact-item">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.59 13.41L9.17 12l-6.17 6.17 6.17 6.17 1.41-1.41L7.34 17H20v-2H7.34l3.25-3.25z"/></svg>
+        <a target="_blank" rel="noopener noreferrer" href="https://sites.google.com/view/portafoliobycarlos/quién-soy">
+          https://sites.google.com/view/portafoliobycarlos/quién-soy
+        </a>
+      </div>
+      <div class="contact-item">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11.873 19h-2.793v-8.528h2.793v8.528zm-1.397-9.876c-.884 0-1.47-.648-1.47-1.456 0-.834.602-1.457 1.514-1.457s1.47.623 1.484 1.457c0 .808-.6 1.456-1.528 1.456zM20 19h-2.793v-4.328c0-1.133-.405-1.903-1.416-1.903-.773 0-1.234.521-1.438 1.025-.074.18-.095.429-.095.68v4.526H11.6s.037-7.344 0-8.528h2.792v1.209c.37-.572 1.032-1.386 2.513-1.386 1.84 0 3.225 1.204 3.225 3.791v4.914z"/></svg>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/carlos-huezo-16848037a">
+          www.linkedin.com/in/carlos-huezo-16848037a
+        </a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
